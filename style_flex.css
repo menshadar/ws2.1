@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  flex: 1;
+  min-width: 0;
+}
+
+.right {
+  width: 300px;
+  background: #2c3e50;
+  color: white;
+}
+
+.vbar {
+  width: 12px;
+  background: linear-gradient(to bottom, #3498db, #8e44ad);
+}
+
+.block {
+  padding: 1.5rem;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.block1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: right;
+  margin: 10px 10px 0 10px;
+}
+
+.block1 h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.block3 {
+  background: white;
+  flex: 1;
+  overflow-y: auto;
+  margin: 0 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.block3 h2 {
+  color: #2c3e50;
+  margin: 1.5rem 0 1rem;
+  font-size: 1.6rem;
+}
+
+.block3 p, .block3 ul, .block3 ol {
+  margin-bottom: 1rem;
+}
+
+.center-img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.block4 {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  color: white;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+.block4 h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.block2 {
+  background: #34495e;
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block2 nav ul {
+  list-style: none;
+  width: 100%;
+}
+
+.block2 nav ul li {
+  margin: 0.8rem 0;
+}
+
+.block2 nav ul li a {
+  display: block;
+  padding: 0.8rem 1.2rem;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.block2 nav ul li a:hover,
+.block2 nav ul li a.active {
+  background: #3498db;
+  color: white;
+  transform: translateX(5px);
+}
+
+.block5 {
+  background: #2c3e50;
+  color: #95a5a6;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0 10px 10px 10px;
+}
